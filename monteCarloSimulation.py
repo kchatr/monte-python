@@ -43,12 +43,14 @@ scenario = 1 #initalize scenario to 1.
 #Each scenario is one 'full round' i.e. 1 round = total_plays. By having multiple scenarios, we see the variance in data and how random variables influence the end result, even though the control variables are never altered.
 #The more scenarios used, the better.
 
+total_funds_userInput = int(input("How much money do you start with? " + "Please enter a positive integer. ")) #user input for the total funds of the player
+total_bet_userInput = int(input("How much money do you bet each turn? " + "Please enter a positive integer. ")) #user input for the amount of money wagered
 total_plays_userInput = int(input("How many times would you like to play? " + "Please enter a positive integer. ")) #user input for the number of plays
-total_scenarios = int(input("How many scenarios would you like to simulate? " + "Please enter a postitive integer. "))
+total_scenarios = int(input("How many scenarios would you like to simulate? " + "Please enter a postitive integer. ")) #user input for amount of scenarios being run
 print("The more scenarios you use, the more accurate the model will be, but it will also take longer for the graph to load.")
 
 while scenario <= total_scenarios: #the number indicates the amount of lines that will be drawn in the graph. Each line is one 'full round'
-    ending_fund = play(10000, 100, total_plays_userInput)
+    ending_fund = play(total_funds_userInput, total_bet_userInput, total_plays_userInput)
     scenario += 1
 
 mplt.xlabel('Number of bets') #sets x-axis label
