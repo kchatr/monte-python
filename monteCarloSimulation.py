@@ -1,5 +1,5 @@
-#A Monte Carlo Simulation: A model used to understand and assess the risk and uncertainity in a myriad of fields (i.e.finance, project management, and other forecasting models)
-#Player gets to spin an imaginary spinner in a casino. If it is between 52-100, the player wins; if it is between 1-51, the house wins
+#A Monte Carlo Simulation
+#Player spins an imaginary spinner in a casino. If it is between 52-100, the player wins; if it is between 1-51, the house wins.
 #The house edge in this game is 2%. For comparison, the lowest house edge in European Roulette is 2.7%.
 
 #Let's see how this plays out.
